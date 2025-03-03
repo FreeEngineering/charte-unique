@@ -1,0 +1,434 @@
+#+title: Glossaires et acronymes harmonisés
+#+author: Free Engineering
+#+date: <2025-02-28 Fri>
+#+license: MIT
+
+L'emplois d'un référenciel harmonisé des termes et définitions et d'acronymes permet d'assurer la cohérence d'ensemble de vos documents et d'opérer un alignement sémantique au sein de votre organisation et de vos projets. L'utilisation du présent glossaire vous assure d'employer des définitions faisant consencus dans la profession.
+
+Pour l'utiliser automatiquement lors de la rédaction de vos document, nous vous conseillons d'utiliser le module d'extension d'Emacs : Org-Glossary.
+
+Commencez par cloner le dépôt "FreeEngineering/charte-unique"
+#+begin_src bash
+git clone https://github.com/FreeEngineering/charte-unique.git ~/charte-unique
+#+end_src
+
+#+RESULTS:
+
+Puis, dans votre fichier de configuration Emacs (généralement ~.emacs~ ou ~.init~) ajoutez le script suivant :
+#+begin_src emacs-lisp
+(use-package org-glossary
+  :straight (:host github :repo "tecosaur/org-glossary"))
+#+end_src
+
+Remarquez que nous utilisions le gestionnaires de paquets ~straight.el~. Pour configurer Straight, [[https://github.com/radian-software/straight.el?tab=readme-ov-file#getting-started][suivez ce tutoriel]].
+
+Pour imprimer les entrées lors de l'export LaTeX, vous pouvez utilisez les balises suivantes :
+#+begin_src org-mode
+#+print_bibliography:
+#+print_bibliography: :type glossary
+#+print_bibliography: :type acronyms
+#+end_src
+
+~#+print_glossary:~ Imprimera toutes les entrées trouvées dans votre document et organisera naturellement le glossaire, les acronymes et l'index.
+~#+print_glossary: :type glossary~ Imprimera uniquement le glossaire. 
+~#+print_glossary: :type acronyms~ Imprimera uniquement les acronymes. 
+
+
+* Glossaire
+** Vocabulaire technique
+- Augmented Reality :: La réalité augmentée désigne les systèmes informatiques qui rendent possible la superposition d’un modèle virtuel 3D ou 2D à la perception que nous avons naturellement de la réalité et ceci en temps réel.
+
+- Base de données  :: Système d'organisation de données englobant la structure d'information, l'information numérisée elle-même (fichiers) et les procédures ou langage d'accès.On entend par base de données un recueil d'œuvres, de données ou d'autres éléments indépendants, disposés de manière systématique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autre moyen (Code de la Propriété Intellectuelle L112-3, 2ème alinéa).
+
+- Big data :: Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine.
+
+- Jumeau numérique :: Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité).
+
+- Médium :: Moyen par lequel est transmise une information.
+
+- Réalité étendue :: Mise en œuvre de technologies de réalité augmentée (AR), de réalité virtuelle (VR) et de réalité mixte (MR) dont l'objectif est de fusionner ou de refléter le monde physique avec un monde numérique qui peut interagir avec lui.
+
+- Retours haptiques :: Technologie utilisant les vibrations pour stimuler le toucher.
+
+- Skeumorphisme :: Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine.
+
+- Sonification :: Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information.
+
+** Troubles neurodivergents
+- Autisme :: Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé.
+
+- Dyscalculie :: Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques.
+
+- Dyslexie :: Trouble de la lecture et de l'écriture spécifique et durable qui peut se traduire à divers degrés par des difficultés à épeler les mots, lire vite, écrire, lire à voix haute ou bien comprendre ce qui est lu.
+
+- Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc.
+
+- Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat.
+
+- TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie.
+
+** Troubles de la vision
+- Achromatopsie :: Absence totale de vision des couleurs.
+
+- Deutéranopie :: Incapacité à différencier le rouge du vert.
+
+- Deutéranomalie :: Sensibilité au vert réduite avec une tendance à le confondre avec le jaune.
+
+- Protanopie :: Absence totale de la perception du rouge.
+
+- Protanomalie :: Sensibilité au rouge réduite avec une tendance à le confondre avec le vert.
+
+- Tritanopie :: Absence totale de la perception du bleu.
+
+- Tritanomalie :: Sensibilité au bleu réduite avec une tendance à le confondre avec le vert ou le jaune.
+
+** Outils informatiques
+- Armoire à Plan Electronique  :: Système informatique de contrôle de plans numérisés pour les opérations de synthèses. La gestion porte sur les entités du cartouche, non sur le contenu.
+
+** Building Information Modeling
+- Asset Information Requirements  :: Exigences d’informations de l’actif.Sont générées à partir de l’OIR et contribuent à la spécification de l’EIR.
+
+- Attribut :: Description associée uniquement à un objet
+
+** Industrie de la construction
+
+- 4D :: Usage BIM dans lequel des données de planiﬁcation sont associées à certains éléments du modèle BIM.Le planning est ainsi intégré au sein du modèle et on peut le visualiser sous une perspective séquentielle, mais aussi réaliser diverses analyses concernant les délais.
+
+- 5D :: Usage BIM dans lequel les éléments, les types ou les matériaux du modèle BIM sont reliés à une base de données de coûts.Cette liaison peut s’opérer par l’intermédiaire de codes de coût, ce qui permet de procéder à une estimation intégrée des coûts.
+
+- XD :: Au-delà de 5D, on généralise aux autres informations qui peuvent être ajoutées aux objets BIM comme l'acoustique, l'impact environnemental, la thermique...
+
+- Avant Projet Sommaire :: Phase d’exploration des différentes solutions possibles. Durant cette étape, les équipes s’intéressent d’avantages à la fonctionnalité.
+
+- Avant Projet :: Regroupement des phases APS et APD généralement réalisé dans le secteur privé pour raccourcir le temps de conceptualisation du projet.
+
+- BIM Manager :: Fonction consistant à diriger des processus BIM en vue de leurs bons déroulement, et à assister les équipes de projets.
+- BIM Modeleur :: C’est un projeteur expert en modélisation 3D et en gestion de l’information.Son rôle et son périmètre d’intervention sont avant tout productifs.Suivant les recommandations et prescriptions établies par le BIM management, il élabore, modélise les ouvrages, produit et édite les modèles 3D, les plans nécessaires à chaque phase du projet…Il peut réaliser aussi des contributions d’autres natures (notes de calculs, qualifications des données, spécification des nomenclatures, etc.), qui peuvent constituer des données de la maquette.
+- BIM-Catalogue :: Catalogue d’objets sous format numérique intégrables dans une maquette numérique. Un BIM-catalogue peut être générique ou spécifique à un fournisseur.
+- Calepinage :: Assemblage d'éléments constructifs standards ou préfabriqués, sur la trame du bâtiment, et selon des règles de coordination dimensionnelle.
+- Charte BIM :: Document prescrivant les modalités à respecter en terme de modélisation d’information et de modélisation graphique au sein d’un organisme.
+- Classe :: Une classe regroupe des objets de même type, possédant des propriétés et un comportement semblable.
+- Classification :: Processus de tri des objets intégrés à la maquette selon un standard, une norme ou une définition propriétaire.
+- Closed BIM :: Echanges fermés, entre logiciels d’un même éditeur. Le Closed BIM est un procédé utilisé au sein du BIM. Lorsqu’elles collaborent selon une approche Closed BIM, toutes les parties utilisent le même logiciel. L’échange de modèles BIM ne nécessite dès lors pas de modifications de format de fichier.
+- Cloud :: Stockage des données sur les serveurs accessibles par internet (publics ou privés). Ce système permet une externalisation des données, de leur stockage, de leur sauvegarde, avec des accès distants (y compris pour des utilisateurs de plusieurs sociétés différentes). Il permet donc le travail collaboratif par l’accès simultanée de plusieurs utilisateurs au même fichier.
+- Codification :: Attribution d’un code à un fichier afin qu’il soit identifiable de façon unique dans le CDE ou dans la GED.
+- Conflit :: Aussi appelé « Clash », Incident potentiel mis en lumière à la suite d’un contrôle des conflits (clash control).
+- Conteneur :: Ensemble nommé de données et d’informations au sein d’un fichier, d’un système ou d’une hiérarchie de stockage de applications. Il peut s’agir d’un répertoire, sous-répertoire, fichier de données (comme un modèle, un document, un tableau, un schéma…) ou d’un sous-ensemble distinct d’un fichier de données tel qu’un chapitre ou une section, une couche ou un symbole.
+- Convention BIM :: Document établissant la stratégie de développement du processus BIM d’un organisme.
+- Coordinateur BIM :: Acteur référent qui gère la partie du projet spécifique traitée en BIM par son entité. Il forme les sous-traitants impliqués dans la génération de modèles numériques BIM, et participe à l’élaboration du PEB. Il pilote et audit également les modèles BIM selon les contrôles qualités définis par le PEB.Rôle BIM qui consiste à organiser et à contrôler la coordination globale entre les disciplines.Note : Le coordinateur BIM remplit souvent un rôle opérationnel global et travaille en étroite collaboration avec le BIM manager.
+- Cycle de vie :: Le cycle de vie est la période s’étendant de la livraison/réception à la fin de vie, en passant par l’utilisation/le fonctionnement.
+- Détection des conflits :: Usage BIM qui permet de détecter les conflits ou les erreurs dans l’espace en comparant les modèles BIM (partiels) ou certains éléments de ces modèles.Les conflits mettent en lumière les défauts tels que des éléments se chevauchant, prévus en double ou insuffisamment espacés.Les conflits étant détectés directement dans le modèle BIM, les erreurs peuvent être évitées sur chantier, où elles sont souvent plus difficiles à résoudre et où elles entraînent des coûts supplémentaires ainsi qu’une perte de temps.
+- Diffusé :: Attribut signalant l'état diffusé d'un livrable
+- Digital Twin :: En français : Jumeau numérique. :: Représentation numérisée d’un ouvrage physique, utilisée principalement pour les besoins de son exploitation et de sa maintenance.Le jumeau numérique évolue au fur et à mesure des modifications, des rénovations, de l’exploitation, de la maintenance de l’ouvrage réel.
+- Format ouvert :: Un format de fichier est ouvert quand il permet d'être échangé entre plusieurs logiciels. Un format de fichier ouvert définit un protocole de communication, d'interconnexion ou d'échange et tout format de données interopérable et dont les spécifications techniques sont publiques et sans restriction d'accès ni de mise en œuvre.
+- Format propriétaire :: Un format de fichier est propriétaire lorsqu'il caractérise un éditeur disposant d'une solution logicielle ou d'une gamme de solutions logicielles.
+- Héritage :: Mécanisme qui permet à des objets d'une sous-classe de bénéficier des propriétés des classes "parents" ou sur-classes. Critère principal de structuration des concepts.
+- Information :: Données traitées qui sont placées dans un contexte, ce qui leur confère un sens et une structure, et les rend, de ce fait, exploitables.
+- Ingénierie concourante :: Selon la norme ISO 19101, il s’agit de la « capacité́ d’un système ou d’une composante d’un système à permettre un partage des informations ainsi qu’un contrôle des processus coopératifs ».
+- Interopérabilité :: Capacité d’échanger par la présence d’un standard neutre et ouvert des données entre les différents « modèles » sans dépendre d’un acteur ou d’un outil en particulier.
+- Maturité :: (Contributeurs) Niveau d'intégration du processus BIM par les intervenants d'un projet. (Projet) Niveau d'intégration du processus BIM dans le projet et de la qualité de réalisation des usages BIM. (Entreprise) Niveau d’intégration du processus BIM au sein d’une entreprise.
+- Nuage de points :: Fichiers obtenus à partir d’un scanner laser 3D, reconstituant l’espace où le volume capté par l’appareil : ces points sont ensuite importés dans des logiciels graphiques, pour visualiser l’espace, prendre des mesures des dimensions, construire une maquette numérique de l’existant.
+- Objectif BIM :: Expression des exigences de la MOA pour un projet BIM
+- Objet BIM :: Objet de construction numérique. Représentation virtuelle d’un élément de construction, en trois dimensions, formellement identifié avec ses propriétés.
+- Objet BIM Générique :: Objet décrivant, en termes de spécifications fonctionnelles et de performances, un ouvrage, une partie d’ouvrage ou un composant. Il est utilisé en phase conception jusqu’au marché de travaux pour préciser les exigences attendues dans les phases amont du développement de la maquette numérique et constitue ainsi l’amorce de l’objet représentatif de la solution pratique correspondante. Ces objets sont ensuite partagés, exploités par l’ensemble des acteurs tout au long du cycle de vie de l’ouvrage, qui renseigne, complète et détaille leurs paramètres.
+- OmniClass :: Système américain de classification des produits de construction.
+- Open BIM :: Approche open-source pour la conception, la réalisation et l'exploitation de bâtiment, en collaborations, basée sur des normes (ISO 16739, ISO 12006-3 et ISO 29481-1...) et des flux de travail ouverts.
+- Ouvrage :: Désigne un élément du bâtiment construit sur place, faisant appel à de la main d'œuvre et des matériaux.
+- Plateforme collaborative :: Infrastructure d’échange de données liées à un projet selon des méthodologies définies. Elle centralise tous les outils liés à la conduite de projet et la gestion des connaissances liées à ce même projet et les mets à disposition des acteurs dudit projet.
+- Processus BIM :: Ensemble de processus d’application opérationnelle de cas d’usages BIM. Un processus est un ensemble d’opérations, d’actions ou d’évènements mis en œuvre pour atteindre un ou plusieurs objectifs et réaliser un usage BIM. Les processus sont généralement illustrés par des représentations graphiques telles que des logigrammes ou des schémas BPMN.
+- Propriété :: Attribut qui qualifie les caractéristiques graphiques, physique, analytique et techniques d’un objet. Caractéristique ou qualité d’un élément de construction.  ISO 6707-1 (3.7.1.3) : “Caractéristique ou qualité d’un objet.”
+- Protocole BIM :: Document qui définit les axes principaux du processus BIM d’un organisme. Il regroupe un ensemble de règles, de procédures et de modalités organisationnelles à respecte. Il peut servir de socle pour l’élaboration du PEB.
+- Relation :: Lien formel entre deux objets de même classe ou de classe différentes. Une relation est aussi un objet.
+- Réservation :: Élément représentant une ouverture ou un forage à prévoir dans un autre élément. Généralement l’emplacement prévu pour le passage d’une installation ou d’une conduite technique.
+- Smart Contracts :: Protocoles informatiques qui facilitent, vérifient et exécutent la négociation ou l'exécution d'un contrat, ou qui rendent une clause contractuelle inutile.
+- Surface Utile :: La surface utile est la surface intérieure des locaux d’activité. Les circulations et les locaux techniques n’entrent pas dans le calcul de la surface utile.
+- Référence externe :: Mécanisme qui permet de référencer un autre fichier CAO, depuis un fichier CAO maître.
+- Surmodélisation :: Fait de livrer plus d’informations que nécessaire dans un modèle BIM. La surmodélisation constitue une forme de gaspillage. Elle implique non seulement un surcroît d’effort pour la partie qui fournit l’information, mais aussi un allongement des délais de traitement et une augmentation des coûts de stockage. Elle entrave en outre l’obtention des informations souhaitées. Des conventions appropriées en matière de livraison d’informations et de modélisation permettent d’éviter ce problème.
+- Système Internationnal :: La norme internationale ISO 80000-1:2009 décrit les unités du Système international et les recommandations pour l’emploi de leurs multiples et de certaines autres unités.
+- Uniclass :: Système de classification des produits de construction utilisé au Royaume-Uni
+- Viewer :: Logiciel utilitaire, souvent gratuit, permettant d’afficher, visualiser, manipuler un fichier lorsqu’on ne dispose pas de son logiciel d’origine.
+
+- Bim Collaboration Format  :: Standard ouvert de buildingSMART qui facilite la communication par l’intermédiaire du modèle numérique au cours du projet.Il permet de transmettre des remarques ou des demandes de modiﬁcation sans devoir échanger l’ensemble du modèle numérique.Un ﬁchier BCF comprend entre autres une capture d’écran, la position de la caméra, des commentaires, l’assignation des commentaires aux personnes concernées ainsi qu’une liste des éléments associés.
+- Dimension :: Direction d’expansion d’un objet dans l’espace.
+- Donnée :: Informations brutes, non structurées.
+
+* Acronymes
+- BIM :: Building Information Modeling
+- BIS :: Building Information System
+- BOS :: Building Operating System
+- IoT :: Internet of Things
+- VDC :: Virtual Design and Construction
+
+- TDA/H :: Trouble du déficit de l'attention avec ou sans hyperactivité
+
+- DRAO :: Dossier reponse appel d'offre
+- DCE :: Dossier de consultation des entreprises
+- DEM :: Dossier d'exploitation et maintenance
+
+Dossier des quallifications
+- DQF :: Dossier de qualification foudre
+
+- DSN :: Dossier de surete nucleaire
+- DAU :: Dossier d'administration et d'utilisation
+
+Dossiers des definitons
+- DDF :: Dossiers des définitions foudres
+
+- DJD :: Dossier de justification detaille
+- DPL :: Dossier de programmation logiciel
+- DSLI :: Dossier de soutiens logistique integre
+
+Dossiers d'etude
+- ETF :: Etude Technique Foudre
+  
+Dossier d'installation
+- DFA :: Dossier de fabrication
+- DOE :: Dossier des ouvrage execute
+- DSF :: Dossier de sureté de fonctionnement
+- DII :: Dossier d'identification des interfaces
+- DOFC :: Dossier des outillages de fabrication et contrôle
+
+- RCO :: Répertoire des configurations
+- RDE :: Répertoire des dérogations
+- REV :: Répertoire des évolutions
+- RFQ :: Repertoire des fqr
+- RNC :: Répertoire des non conformités
+
+
+- ATS :: Applicant Tracking System
+- APE :: Armoire à plans électronique
+
+- ACQ :: Activités Concernées par la Qualité	
+
+- AFNOR :: Association Française de NORmalisation
+- AIA :: American Institute of Architecture
+- ASN :: Autorité de Sureté Nucléaire
+- ASND :: Autorité de Sureté Nucléaire de Défense
+- bSI :: buildingSMART Internationnal (anciennement l’IAI)
+
+- ACV :: Analyse du Cycle de Vie
+
+- API :: Application Programming Interface
+
+- AIM :: Asset Information Model
+
+** Domaine d'activité
+- ARC :: Architecture
+- AEC :: Architecture Engineering and Construction
+- CVC :: Chauffage, Ventilation et Climatisation
+
+  
+- AC :: Article de Configuration
+- ACSN :: Article de Configuration de Sureté Nucléaire	  
+- AIR :: Asset Information Requirements
+
+
+- BDD :: Behavior Driven Design
+- BOQ :: Bill Of Quantity
+
+** Modélisation du réel
+- BCF :: Bim Collaboration Format
+- BrIM :: Bridge Information Modeling
+- BEM :: Building Energy Modeling
+- CIM :: City Information Modeling
+- CAO, CAD :: Conception Assistée par Ordinateur, aussi appelé Computer Aided Design (CAD)
+- DAO :: Dessin Assisté par Ordinateur	
+
+- bSDD :: buildingSMART Data Dictionary
+- COBie :: Construction-Operations Building information exchange
+- CIS/2 :: CIMsteel Interation Standards
+- CityGML :: City Geography Markup Language
+- DWF :: Design Web Format
+- DTH :: Dictionnaire Technique Harmonisé
+- dthX :: dictionnaire technique harmonisé eXchange
+- DXF :: Drawing eXchange Format
+  :METADATA:
+  :category: "format de fichier"
+  :END:
+- DWG :: DraWinG
+  :METADATA:
+  :category: "format de fichier"
+  :END:
+
+- BPMN :: Business Process Model and Notation (ISO/CEI 19510)
+
+- CDC :: Cahier Des Charges
+- CCAG :: Cahier des Clauses Administratives Générales	
+- CCAP :: Cahier des Clauses Administratives Particulières	
+- CCCG :: Cahier des Clauses Contractuelles Générales	
+- CCTP :: Cahier des Clauses Techniques Particulières
+  
+- CDE :: Common Data Environment
+- CRR :: Compte Rendu de Réunion
+- CFD :: Computational Fluid Dynamics
+
+- CREM :: Conception Réalisation Exploitation Maintenance
+- CONF :: Configuration
+- CPE :: Contrôle Particulier d’Essais
+- DIF :: Diffusé
+- DMU :: Digital Mock-Up, Maquette numérique
+- DAS :: Domaine d’Activité Spécifique	
+- DCE :: Dossier de Consultation des Entreprises
+- AMO :: Assistant de Maître d’Ouvrage
+- AR :: Augmented Reality
+
+** Phase de projet
+- APD :: Avant Projet Définitif
+- APS :: Avant Projet Sommaire
+- AVP :: Avant Projet
+- DOE :: Dossier des Ouvrages Exécutés
+- DJD :: Dossier Justificatif Détaillé
+- ELE :: Electricité
+- ERP, PGI :: Enterprise Ressource Planning
+- ETMT :: Entreprise Titulaire d'un Marché de Travaux
+- EIS :: Equipement Important pour la Sûreté
+- ESQ :: Esquisse
+- ERP :: Etablissement Recevant du Publique
+- EBM :: Etude de Maturité BIM
+- CEN :: European Committee for Standardization
+- EIR :: Exchange information requirements
+- EXE :: Exécution
+- EXPRESS :: Langage formel normalisé pour décrire la structure de bases de données de CAO.
+- EXPRESS-G :: Formalisme graphique pour décrire une structure de base de données de CAO.
+- XML :: eXtended Markup Langage
+- FAO :: Fabrication Assistée par Ordinateur
+- FED :: Fiche d'Evaluation de Document
+- PIC :: Plan d'Implantation Chantier
+- FI :: Fiche d'Intervention
+- FII, FIE :: Fiche d’Interface, Interne (FII) ou Externe (FIE) à un groupement
+- FDC :: Fiche De Contrôle
+- FDES :: Fiche de Déclarations Environnementales et Sanitaires (NF P01-010)
+- FDM :: Fiche De Modification
+- FNC :: Fiche de Non Conformité
+- FDS :: Fiche De Suivi
+- FQR :: Fiche Questions Réponses
+- FTP :: File Transfer Protocole
+- GML :: Geography Markup Language
+- GMAO, CAFM :: Gestion de la Maintenance Assisté par Ordinateur. Dit également Computer Aided Facility Management (CAFM)
+- GED :: Gestion Electronique des Documents
+- GEM, FM, O&M :: Gestion Exploitation Maintenance. Dit également Facility Management (FM) ou Operation & Maintenance (O&M)
+- GUID :: Globally Unique Identifier
+- gbXML :: Green Building XML
+  :METADATA:
+  :category: "format de fichier"
+  :END:
+- HSD :: Hauteur Sous Dalle	
+- HSFP :: Hauteur Sous Faux-Plafond	
+- HVAC :: Heating, Ventilation & Air Conditionning	
+- HSSE :: Hygiène, Santé, Sécurité et Environnement	
+- IFC :: Industry Foundation Classes (ISO 16739)
+  :METADATA:
+  :category: "format de fichier"
+  :END:
+- IDM :: Information Delivery Manual (ISO 29481-1, ISO 29481-2)
+- IDS :: Information Delivery Specifications
+- IT :: Information Technology	
+- INB :: Installation Nucléaire de Base	
+- INBS :: Installation Nucléaire de Base Secrète	
+- IRSN :: Institut de Radioprotection et de Sûreté Nucléaire	
+- ISO :: International Organization for Standardization
+- Jalon :: Etape de validation partielle d'un projet.
+- KPI :: Key Performance Indicator	
+- LIM :: Landscape Information Modeling
+- LandXML :: Format d'échanges de données basé sur le XML, utilisé en génie civil et géomatique afin transmettre les données comme les axes de routes, surface de terrain, etc.
+  :METADATA:
+  :category: "format de fichier"
+  :END:
+- NRD, LOD :: Niveau Requi de Définition, dit également Level Of Definition (LOD)
+- NRG, LoD :: Niveau Requi de Géométrie, dit également Level of Details (LoD)
+- NRI, LOI :: Niveau Requi d'Information, dit éggalement Level Of Information (LOI)
+- LOIN :: Level Of Information Need (ISO 19650)
+- LCA :: Life Cycle Assesment
+- LDA :: Liste des Documents Applicables
+- LDE :: Liste des Documents d’Execution
+- LOFC :: Liste des Opérations de Fabrication et de Contrôle	
+- LOMC :: Liste des Opérations de Montage et de Contrôle	
+- MCO :: Maintiens en Condition Opérationnelle
+- MOE :: Maitrise d'Œuvre
+- MOEe :: Maitrise d'Œuvre d'ensemble
+- MOEp :: Maitrise d'Œuvre particulière
+- MOEx :: Maitrise d'Œuvre experte
+- MOA :: Maitrise d’OuvrAge
+- MN :: Maquette Numérique
+- MPPE :: Marché de Partenariat de Performance Energétique	
+- MGP :: Marché Global de Performance
+- MGPE :: Marché Global de Performance Energétique
+- MGS :: Marché Global Sectoriel
+- MIDP :: Master Information Delivery Plan
+- MEP :: Mechanical, Electrical and Plumbing
+- MERISE :: Méthode d'Etude et de Réalisation Informatique pour les Systèmes d'Entreprise
+- MVD :: Model View Definition. Définit un sous-ensemble du schéma IFC, nécessaire pour satisfaire à une ou plusieurs exigences d'échanges dans le secteur de l'AEC.
+- MOB :: Modélisation des Objets du Bâtiment
+  Recherche française axée sur les aspects de la modélisation conceptuelle lors de la phase de construction des ouvrages abordant l’exploitation dynamique du modèle, dans une problématique d’ingénierie concourante.
+- NBDM :: Neutral Building Data Model
+  Format d’échange entre logiciels de thermique, similaire à gbxml aux Etats-Unis.
+- ODBC :: Open Database Connectivity
+- OPC :: Ordonnancement Planification Coordination	
+- OIR :: Organizational Information Requirements	
+- PEB :: Plan d’Execution BIM
+- PGI :: Plan de Gestion des Interfaces
+- PMAQ :: Plan de Management et d’Assurance Qualité
+- PTNB :: Plan de transition numérique dans le bâtiment
+- PLB :: Plomberie
+- PDF :: Portable Document Format (ISO...?)
+- PV :: Procès Verbal
+- PVC :: Procès Verbal de Contrôle
+- PVCF :: Procès Verbal de Contrôle - Fabrication
+- PVCM :: Procès Verbal de Contrôle - Montage
+- PCI :: Processus de Conception Intégrée (ISO 19101)
+- PIM :: Product Information Modeling
+- PLM :: Product Life cycle Management
+- PPBIM :: Product Properties BIM (EN ISO 23386).
+- PGI :: Progiciel de Gestion Intégré
+- PRE :: Programme de Rénovation Energétique	
+- PGE :: Programme Général d’Essais
+- PPE :: Programme Particulier d’Essais
+- PTD :: Programme Technique Détaillé
+- PTF :: Programme Technique Fonctionnel
+- PIM :: Project Information Model (bâtiment)
+- PIR :: Project Information Requirements
+- PRO :: Projet
+- PAS :: Publicly Avaible Specification
+- QSE :: Qualité, Sécurité, Environnement	
+- RSV :: Réservation
+- RACI :: Responsible, Accountable, Consulted, Informed
+- RICT :: Rapport Initial de Contrôle Technique	
+- RIM :: Resource Information Modeling
+- RFA :: Revit Family
+- RTE :: Revit Template
+- RVT :: Format des fichiers de projet natif du logiciel Revit
+- RIBA :: Royal Institute of British Architects
+- SST :: Santé et Sécurité au Travail
+- SDI :: Schéma Directeur Immobilier
+- PYRO :: Sécurité Pyrotechnique
+- SaaS :: Software as a Service
+- SLI :: Soutiens Logistique Intégré	
+- SMAQ :: Spécification de Management et d’Assurance Qualité	
+- STEP :: STandard for the Exchange of Product data model
+- SAMP :: Strategic Asset Management Plan	
+- STR :: Structure	
+- SADT :: Structured Analysis and Design Technique
+- SQL :: Structured Query Language
+- SDF :: Sûreté De Fonctionnement
+- SN :: Sûreté Nucléaire
+- SDO :: Surface Dans Œuvre
+- SDP :: Surface de Plancher
+- SHOB :: Surface Hors Œuvre Brute
+- SHON :: Surface Hors Œuvre Nette
+- SU :: Surface Utile
+- SAE :: Système d’Alimentation Electrique
+- SEL :: Système d’Etanchéité Liquide
+- SI  :: Système d’Information
+- SIG :: Système d’Information Géographique
+- SGDB, DBMS :: Système de Gestion de Base de Données
+- SMQ :: Système de Management de la Qualité
+- SMI :: Système de Management Intégré
+- SSI :: Système de Sécurité des Informations
+- SSI :: Système de Sécurité Incendie
+- TIDP :: Task Information Delivery Plan
+- TQC :: Tel Que Construit
+- TDC :: Toutes Dépenses Confondues
+- TTC :: Toutes Taxes Comprises
+- VRD :: Voiries et Réseaux Divers
+- WIP :: Work In Progress
+- X-REF :: Référence externe

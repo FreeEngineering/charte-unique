@@ -1,0 +1,34 @@
+* Glossaire
+** Vocabulaire technique
+- Big data :: Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine.
+- Jumeau numérique :: Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité).
+- Médium :: Moyen par lequel est transmise une information.
+- Réalité étendue :: Mise en œuvre de technologies de réalité augmentée (AR), de réalité virtuelle (VR) et de réalité mixte (MR) dont l'objectif est de fusionner ou de refléter le monde physique avec un monde numérique qui peut interagir avec lui.
+- Retours haptiques :: Technologie utilisant les vibrations pour stimuler le toucher.
+- Skeumorphisme :: Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine.
+- Sonification :: Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information.
+
+** Troubles neurodivergents
+- Autisme :: Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé.
+- Dyscalculie :: Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques.
+- Dyslexie :: Trouble de la lecture et de l'écriture spécifique et durable qui peut se traduire à divers degrés par des difficultés à épeler les mots, lire vite, écrire, lire à voix haute ou bien comprendre ce qui est lu.
+- Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc.
+- Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat.
+- TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie.
+
+** Troubles de la vision
+- Achromatopsie :: Absence totale de vision des couleurs.
+- Deutéranopie :: Incapacité à différencier le rouge du vert.
+- Deutéranomalie :: Sensibilité au vert réduite avec une tendance à le confondre avec le jaune.
+- Protanopie :: Absence totale de la perception du rouge.
+- Protanomalie :: Sensibilité au rouge réduite avec une tendance à le confondre avec le vert.
+- Tritanopie :: Absence totale de la perception du bleu.
+- Tritanomalie :: Sensibilité au bleu réduite avec une tendance à le confondre avec le vert ou le jaune.
+
+** Acronymes
+- BIM :: Building Information Modeling
+- BIS :: Building Information System
+- BOS :: Building Operating System
+- IoT :: Internet of Things
+- TDA/H :: Trouble du déficit de l'attention avec ou sans hyperactivité
+- VDC :: Virtual Design and Construction
